@@ -1,2 +1,2 @@
-export { useSettingsStore } from './useSettingsStore'
-export { useVideoStore } from './useVideoStore'
+export { useSettingsStore } from './use-settings-store'
+export { useVideoStore } from './use-video-store'

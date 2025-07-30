@@ -60,30 +60,23 @@ function addItem() {
 </script>
 
 <template>
-   <ElSelect v-model="curItem" :placeholder="selectPlaceholder"
-    > <ElOption v-for="(item, idx) in options" :key="item" :label="item" :value="item"
-      >
+  <ElSelect v-model="curItem" :placeholder="selectPlaceholder">
+    <ElOption v-for="(item, idx) in options" :key="item" :label="item" :value="item">
       <div class="flex items-center justify-between">
-         {{ item }} <CloseOne
-          theme="outline"
-          size="18"
-          class="icon"
-          @click="removeItem(props.type, idx)"
-        />
+        {{ item }}
+        <CloseOne theme="outline" size="18" class="icon" @click="removeItem(props.type, idx)" />
       </div>
-       </ElOption
-    > </ElSelect
-  >
+    </ElOption>
+  </ElSelect>
   <div class="mt-2 flex items-center gap-1">
-     <ElInput
+    <ElInput
       v-model="newItem"
       :placeholder="props.inputPlaceholder"
       size="default"
       clearable
-    ></ElInput
-    > <ElButton type="success" size="default" @click="addItem">添加</ElButton>
+    ></ElInput>
+    <ElButton type="success" size="default" @click="addItem">添加</ElButton>
   </div>
-
 </template>
 
 <style scoped lang="scss">
@@ -91,4 +84,3 @@ function addItem() {
   @apply text-slate-300 duration-300 hover:scale-125 hover:text-red-500;
 }
 </style>
-

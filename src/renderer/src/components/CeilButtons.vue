@@ -19,13 +19,12 @@ callSubscribeMain()
 </script>
 
 <template>
-
   <main>
-
     <section class="flex justify-center gap-2">
-
       <div class="button cursor-pointer">
-         <!-- todo: cursor-pointer --> <!-- items-center 单行, 侧轴中点对齐 (垂直居中) --> <ElUpload
+        <!-- todo: cursor-pointer -->
+        <!-- items-center 单行, 侧轴中点对齐 (垂直居中) -->
+        <ElUpload
           accept="video/*"
           action="#"
           class="flex items-center"
@@ -33,18 +32,16 @@ callSubscribeMain()
           multiple
           :http-request="uploadVideo"
           :show-file-list="false"
-          > <Plus theme="outline" size="42" /> </ElUpload
         >
+          <Plus theme="outline" size="42" />
+        </ElUpload>
       </div>
 
       <div class="button cursor-pointer" @click="startConvert">
-         <UpdateRotation theme="outline" size="42" :class="{ isConverting: isConverting }" />
+        <UpdateRotation theme="outline" size="42" :class="{ isConverting: isConverting }" />
       </div>
-
     </section>
-
   </main>
-
 </template>
 
 <style scoped lang="scss">
@@ -62,4 +59,3 @@ callSubscribeMain()
   border: none !important;
 }
 </style>
-

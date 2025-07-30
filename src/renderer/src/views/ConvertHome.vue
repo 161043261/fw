@@ -6,13 +6,10 @@ import VideoList from '@renderer/components/VideoList.vue'
 </script>
 
 <template>
-
   <main>
-     <BasicSettings class="mt-5" /> <CeilButtons class="mt-5" /> <FloorButtons class="mt-3" />
+    <BasicSettings class="mt-5" /> <CeilButtons class="mt-5" /> <FloorButtons class="mt-3" />
     <VideoList class="mt-5" />
   </main>
-
 </template>
 
 <style scoped lang="css"></style>
-

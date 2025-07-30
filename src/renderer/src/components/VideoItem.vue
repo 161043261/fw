@@ -28,17 +28,13 @@ const bgColor = computed(() => {
 </script>
 
 <template>
-
   <section class="video" :style="`--progress: ${videoItem.progress}%; --bg-color: ${bgColor}`">
-
     <div class="z-10 text-slate-600">{{ `${videoItem.progress}%-${videoItem.state}` }}</div>
 
-    <div class="name z-10"> {{ videoItem.filename }} </div>
+    <div class="name z-10">{{ videoItem.filename }}</div>
 
-    <div class="icon" @click="removeVideo(idx)"> <CloseOne theme="outline" size="18" /> </div>
-
+    <div class="icon" @click="removeVideo(idx)"><CloseOne theme="outline" size="18" /></div>
   </section>
-
 </template>
 
 <style scoped lang="scss">
@@ -84,4 +80,3 @@ const bgColor = computed(() => {
   }
 }
 </style>
-

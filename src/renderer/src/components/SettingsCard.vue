@@ -6,17 +6,13 @@ const props = defineProps<IProps>()
 </script>
 
 <template>
-
   <main>
-
     <section class="shadow-md">
-
       <h2>{{ props.title }}</h2>
-       <!-- 匿名插槽 --> <slot></slot>
+      <!-- 匿名插槽 -->
+      <slot></slot>
     </section>
-
   </main>
-
 </template>
 
 <style scoped lang="scss">
@@ -27,4 +23,3 @@ section {
   }
 }
 </style>
-

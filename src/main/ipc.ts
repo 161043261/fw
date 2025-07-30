@@ -1,5 +1,5 @@
 import { ipcMain, IpcMainInvokeEvent } from 'electron'
-import FfmpegWrapper from './ffmpeg_wrapper'
+import FfmpegWrapper from './fw'
 import { IConvertSettings, IVideoItem } from './types'
 import { selectDir } from './dir'
 

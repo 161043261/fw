@@ -1,4 +1,4 @@
 // composables: 可组合的
-export { default as useConvert } from './useConvert'
-export { default as useSettings } from './useSettings'
-export { default as useVideo } from './useVideo'
+export { default as useConvert } from './use-convert'
+export { default as useSettings } from './use-settings'
+export { default as useVideo } from './use-video'
