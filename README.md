@@ -1,6 +1,7 @@
 # fw
 
-> [!note] explain
+> [!note] fw
+> 
 > fw: ffmpeg wrapper
 
 ## 视频转码
